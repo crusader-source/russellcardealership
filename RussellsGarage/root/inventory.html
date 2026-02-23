@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Russell's Garage — Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://via.placeholder.com/140x60?text=Russell%27s+Garage" alt="Russell's Garage logo">
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Inventory List</h1>
+
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search by..." oninput="filterInventory()">
+      <select id="makeFilter" onchange="filterInventory()">
+        <option value="">Filter by Make</option>
+        <option>Toyota</option>
+        <option>Honda</option>
+        <option>Ford</option>
+        <option>BMW</option>
+        <option>Mercedes-Benz</option>
+        <option>Nissan</option>
+      </select>
+
+      <select id="priceFilter" onchange="filterInventory()">
+        <option value="">Filter by Price</option>
+        <option value="0-20000">Under $20,000</option>
+        <option value="20000-35000">$20,000 - $35,000</option>
+        <option value="35000-999999">$35,000+</option>
+      </select>
+
+      <button class="btn" onclick="resetFilters()">Apply Filters</button>
+    </div>
+
+    <section id="inventoryGrid" class="inventory-grid">
+      <!-- inventory cards inserted by script -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <h4>Russell's Garage</h4>
+        <p><a href="contact.html">Contact</a> • About Us</p>
+      </div>
+      <div class="store-badges">
+        <img src="https://via.placeholder.com/150x50?text=Google+Play" alt="Google Play">
+        <img src="https://via.placeholder.com/150x50?text=App+Store" alt="App Store">
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="facebook">FB</a>
+        <a href="#" aria-label="youtube">YT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
