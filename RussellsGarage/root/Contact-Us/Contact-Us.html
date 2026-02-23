@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Russell's Garage | Contact Us</title>
+  <link rel="stylesheet" href="Contact-Us.css" />
+</head>
+
+<body>
+  <!-- =========================
+       HEADER + NAVIGATION
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand / Logo -->
+      <a class="brand" href="../Homepage/index.html">
+        <img class="brand-logo" src="../images/logo.png" alt="Russell's Garage logo" />
+        <span class="brand-name">Russell's Garage</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../Homepage/index.html">Home</a></li>
+          <li><a class="nav-link" href="../Inventory/inventory.html">Inventory</a></li>
+          <li><a class="nav-link" href="../Contact-Us/about.html">About Us</a></li>
+          <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+  <main class="container page-content">
+    <h1 class="page-title">Contact Us</h1>
+
+    <section class="contact-layout" aria-label="Contact page content">
+      <!-- LEFT: Contact info -->
+      <section class="contact-info" aria-label="Business contact information">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <p class="info-line"><span class="label">Phone:</span> (555) 123-4567</p>
+        <p class="info-line"><span class="label">Email:</span> support@russellsgarage.com</p>
+        <p class="info-line"><span class="label">Address:</span> 123 Main Street, Your City, ST 00000</p>
+
+        <h3 class="mini-title">Hours</h3>
+        <ul class="hours-list">
+          <li>Mon–Fri: 9:00 AM – 6:00 PM</li>
+          <li>Sat: 10:00 AM – 4:00 PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </section>
+
+      <!-- RIGHT: Contact form -->
+      <section class="contact-form" aria-label="Contact form">
+        <h2 class="section-title">Send a Message</h2>
+
+        <form action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-red" type="submit">Submit</button>
+            <button class="btn btn-black" type="reset">Clear</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- Left -->
+      <section class="footer-col">
+        <h3 class="footer-title">Russell's Garage</h3>
+        <p><a class="footer-link" href="../Contact-Us/about.html">About Us</a></p>
+        <p><a class="footer-link" href="contact.html">Contact</a></p>
+      </section>
+
+      <!-- Middle -->
+      <section class="footer-col store-icons" aria-label="App store links">
+        <img src="../images/google-play.png" alt="Get it on Google Play" />
+        <img src="../images/app-store.png" alt="Download on the App Store" />
+      </section>
+
+      <!-- Right -->
+      <section class="footer-col footer-right" aria-label="Footer logo">
+        <img class="footer-logo" src="../images/logo.png" alt="Russell's Garage logo" />
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

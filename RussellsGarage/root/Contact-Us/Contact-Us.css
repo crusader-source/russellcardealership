@@ -1,0 +1,229 @@
+/* =========================
+   BASE STYLES
+========================= */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+.site-header {
+  background: black;
+  color: white;
+  padding: 15px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 55px;
+  height: auto;
+}
+
+.brand-name {
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+/* =========================
+   PAGE CONTENT
+========================= */
+.page-content {
+  padding: 20px 0 35px;
+}
+
+.page-title {
+  margin: 25px 0;
+  font-size: 1.3rem;
+}
+
+/* Two-column layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Left info */
+.section-title {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+}
+
+.info-line {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.mini-title {
+  margin: 18px 0 10px;
+  font-size: 1rem;
+}
+
+.hours-list {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+/* Form */
+.contact-form form {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.form-row {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 8px;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons (same style as other pages) */
+.btn {
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-red {
+  background: darkred;
+  color: white;
+}
+
+.btn-black {
+  background: black;
+  color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  background: black;
+  color: white;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-title {
+  margin: 0 0 8px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.store-icons img {
+  width: 170px;
+  display: block;
+  margin: 6px 0;
+}
+
+.footer-logo {
+  width: 90px;
+  height: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1150px) {
+  .container {
+    width: 92%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
