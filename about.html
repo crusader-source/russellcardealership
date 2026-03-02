@@ -8,10 +8,12 @@
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
+  <!-- =========================
+       HEADER + NAVIGATION
+  ========================== -->
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
         <img src="images/logo.png" alt="Russell's Garage logo" />
       </a>
 
@@ -24,24 +26,51 @@
     </div>
   </header>
 
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
   <main class="container">
-    <h1>About Us</h1>
+    <section class="hero" aria-label="About header">
+      <div class="card">
+        <h1>About Us</h1>
+        <p>Learn about our mission and values.</p>
+      </div>
+    </section>
 
     <section class="promo" aria-label="About layout">
       <div class="media-right">
         <h2>Our Mission</h2>
-        <p style="color: var(--muted); margin-top:10px; line-height:1.6;">
+        <p>
           At Russell’s Garage, our mission is to provide an unparalleled car buying experience.
         </p>
 
-        <h2 style="margin-top:18px;">Our Values</h2>
-        <ul style="color: var(--muted); margin-top:10px; line-height:1.7; padding-left:18px;">
-          <li><strong>Integrity:</strong> Honest and transparent interactions.</li>
-          <li><strong>Customer Focus:</strong> Personalized service and support.</li>
-          <li><strong>Quality:</strong> Inspected, maintained, and dependable vehicles.</li>
-          <li><strong>Excellence:</strong> Continuous improvement across operations.</li>
-          <li><strong>Community:</strong> Giving back and building relationships.</li>
-        </ul>
+        <h2>Our Values</h2>
+        <div class="grid-two" aria-label="Values list">
+          <section class="card">
+            <h3>Integrity</h3>
+            <p>We conduct our business with honesty and transparency.</p>
+          </section>
+
+          <section class="card">
+            <h3>Customer Focus</h3>
+            <p>We provide personalized service and support.</p>
+          </section>
+
+          <section class="card">
+            <h3>Quality</h3>
+            <p>We offer high-quality vehicles inspected and maintained.</p>
+          </section>
+
+          <section class="card">
+            <h3>Excellence</h3>
+            <p>We continuously improve and deliver excellence.</p>
+          </section>
+
+          <section class="card">
+            <h3>Community</h3>
+            <p>We give back and build positive relationships.</p>
+          </section>
+        </div>
       </div>
 
       <div class="media-left">
@@ -49,29 +78,31 @@
       </div>
     </section>
 
-    <section class="gallery" aria-label="Second photo">
+    <section class="gallery" aria-label="Team photo">
       <div class="gallery-item">
         <img src="images/about-2.jpg" alt="Team member smiling" />
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
         <h4>Russell's Garage</h4>
-        <p><a href="about.html" style="color:#fff; text-decoration:none;">About</a></p>
-        <p><a href="contact.html" style="color:#fff; text-decoration:none;">Contact</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
       </div>
 
-      <div class="store-badges">
+      <div class="store-badges" aria-label="App store badges">
         <img src="images/google-play.png" alt="Get it on Google Play" />
         <img src="images/app-store.png" alt="Download on the App Store" />
       </div>
 
-      <div>
-        <img src="images/logo.png" alt="Russell's Garage logo" style="height:56px;" />
+      <div class="footer-right" aria-label="Footer logo">
+        <img src="images/logo.png" alt="Russell's Garage logo" />
       </div>
     </div>
   </footer>

@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Russell's Garage | Inventory</title>
+  <title>Russell's Garage | Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
+  <!-- =========================
+       HEADER + NAVIGATION
+  ========================== -->
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
         <img src="images/logo.png" alt="Russell's Garage logo" />
       </a>
 
@@ -24,73 +26,82 @@
     </div>
   </header>
 
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
   <main class="container">
-    <h1>Inventory List</h1>
+    <section class="hero" aria-label="Welcome section">
+      <div class="card">
+        <h1>Welcome to Russell's Dealership</h1>
+        <p>Your one-stop shop for quality new and used vehicles.</p>
+      </div>
 
-    <!-- Filters -->
-    <form class="filters" action="#" method="get" aria-label="Inventory filters">
-      <input type="search" name="search" placeholder="Search by..." />
+      <div class="grid-two" aria-label="New and used options">
+        <section class="card" aria-label="New cars">
+          <h2>New Cars</h2>
+          <p>Explore our latest models with outstanding performance and technology.</p>
+          <a class="btn" href="inventory.html">View Inventory</a>
+        </section>
 
-      <select name="make">
-        <option value="">Filter by Make</option>
-        <option value="toyota">Toyota</option>
-        <option value="honda">Honda</option>
-        <option value="ford">Ford</option>
-        <option value="nissan">Nissan</option>
-      </select>
+        <section class="card" aria-label="Used cars">
+          <h2>Used Cars</h2>
+          <p>Find reliable pre-owned vehicles at a great price and great value.</p>
+          <a class="btn" href="inventory.html">View Inventory</a>
+        </section>
+      </div>
+    </section>
 
-      <select name="price">
-        <option value="">Filter by Price</option>
-        <option value="0-20000">$0 - $20,000</option>
-        <option value="20001-35000">$20,001 - $35,000</option>
-        <option value="35001-50000">$35,001 - $50,000</option>
-        <option value="50001+">$50,001+</option>
-      </select>
+    <section class="promo" aria-label="Featured section">
+      <div class="media-left">
+        <img src="images/hero-car.jpg" alt="Featured vehicle" />
+      </div>
 
-      <button class="btn" type="submit">Apply Filters</button>
-    </form>
+      <div class="media-right">
+        <h2>Featured Vehicle</h2>
+        <p>
+          Browse our inventory to find the perfect match. We focus on quality, transparency,
+          and a smooth buying experience from start to finish.
+        </p>
+        <a class="btn" href="inventory.html">Browse Inventory</a>
+      </div>
+    </section>
 
-    <!-- Inventory Grid -->
-    <section class="inventory-grid" aria-label="Vehicle inventory">
-      <article class="inventory-card">
-        <img src="images/car1.jpg" alt="Toyota Camry" />
-        <h4>Toyota Camry</h4>
-        <p>Price: $25,000</p>
-        <a class="btn" href="car-details.html">View Details</a>
-      </article>
+    <section class="gallery" aria-label="Gallery section">
+      <div class="grid-two">
+        <div class="gallery-item">
+          <img src="images/lot-car.jpg" alt="Car lot inventory" />
+        </div>
 
-      <article class="inventory-card">
-        <img src="images/lot-car.jpg" alt="Honda Civic" />
-        <h4>Honda Civic</h4>
-        <p>Price: $22,000</p>
-        <a class="btn" href="car-details.html">View Details</a>
-      </article>
-
-      <article class="inventory-card">
-        <img src="images/hero-car.jpg" alt="Ford F-150" />
-        <h4>Ford F-150</h4>
-        <p>Price: $35,000</p>
-        <a class="btn" href="car-details.html">View Details</a>
-      </article>
+        <section class="card" aria-label="Why choose us">
+          <h2>Why Russell’s Garage?</h2>
+          <p>
+            Quality vehicles, helpful support, and simple online browsing. Use filters on the
+            inventory page and view details for each vehicle.
+          </p>
+          <a class="btn" href="about.html">Learn More</a>
+        </section>
+      </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
         <h4>Russell's Garage</h4>
-        <p><a href="about.html" style="color:#fff; text-decoration:none;">About</a></p>
-        <p><a href="contact.html" style="color:#fff; text-decoration:none;">Contact</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
       </div>
 
-      <div class="store-badges">
+      <div class="store-badges" aria-label="App store badges">
         <img src="images/google-play.png" alt="Get it on Google Play" />
         <img src="images/app-store.png" alt="Download on the App Store" />
       </div>
 
-      <div>
-        <img src="images/logo.png" alt="Russell's Garage logo" style="height:56px;" />
+      <div class="footer-right" aria-label="Footer logo">
+        <img src="images/logo.png" alt="Russell's Garage logo" />
       </div>
     </div>
   </footer>

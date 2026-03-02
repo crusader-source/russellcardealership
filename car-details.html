@@ -8,10 +8,12 @@
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
+  <!-- =========================
+       HEADER + NAVIGATION
+  ========================== -->
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
         <img src="images/logo.png" alt="Russell's Garage logo" />
       </a>
 
@@ -24,8 +26,16 @@
     </div>
   </header>
 
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
   <main class="container">
-    <h1>Car Details</h1>
+    <section class="hero" aria-label="Car details header">
+      <div class="card">
+        <h1>Car Details</h1>
+        <p>Full vehicle information and features.</p>
+      </div>
+    </section>
 
     <section class="promo" aria-label="Car details layout">
       <div class="media-left">
@@ -34,60 +44,58 @@
 
       <div class="media-right">
         <h2>Luxury Sedan Model X</h2>
-        <p style="color: var(--muted); margin-top:6px;">Price: $45,999</p>
+        <p>Price: $45,999</p>
 
-        <h3 style="margin-top:14px;">Specifications</h3>
-        <ul style="color: var(--muted); margin-top:10px; line-height:1.6; padding-left:18px;">
-          <li>Year: 2023</li>
-          <li>Make: BrandName</li>
-          <li>Model: Sedan Model X</li>
-          <li>Mileage: 12,500 miles</li>
-          <li>Engine: 2.0L Turbo I4</li>
-          <li>Transmission: 8-Speed Automatic</li>
-          <li>Color: Obsidian Black</li>
-          <li>Fuel Type: Gasoline</li>
-        </ul>
+        <div class="grid-two" aria-label="Specs and features">
+          <section class="card" aria-label="Specifications">
+            <h3>Specifications</h3>
+            <p>Year: 2023</p>
+            <p>Make: BrandName</p>
+            <p>Model: Sedan Model X</p>
+            <p>Mileage: 12,500 miles</p>
+            <p>Engine: 2.0L Turbo I4</p>
+            <p>Transmission: 8-Speed Automatic</p>
+            <p>Color: Obsidian Black</p>
+            <p>Fuel Type: Gasoline</p>
+          </section>
 
-        <h3 style="margin-top:14px;">Features</h3>
-        <div class="grid-two" style="margin-top:10px; gap:20px;">
-          <ul style="color: var(--muted); line-height:1.6; padding-left:18px;">
-            <li>Leather Seats</li>
-            <li>Navigation System</li>
-            <li>Heated Seats</li>
-            <li>Apple CarPlay/Android Auto</li>
-          </ul>
-          <ul style="color: var(--muted); line-height:1.6; padding-left:18px;">
-            <li>Sunroof</li>
-            <li>Backup Camera</li>
-            <li>Blind Spot Monitoring</li>
-            <li>Premium Sound System</li>
-          </ul>
+          <section class="card" aria-label="Features">
+            <h3>Features</h3>
+            <p>Leather Seats</p>
+            <p>Navigation System</p>
+            <p>Heated Seats</p>
+            <p>Apple CarPlay/Android Auto</p>
+            <p>Sunroof</p>
+            <p>Backup Camera</p>
+            <p>Blind Spot Monitoring</p>
+            <p>Premium Sound System</p>
+          </section>
         </div>
 
-        <div style="margin-top:14px;">
-          <a class="btn" href="contact.html">Contact Seller</a>
-          <a class="btn" href="contact.html" style="background:#111; margin-left:10px;">Schedule Test Drive</a>
-        </div>
+        <a class="btn" href="contact.html">Contact Seller</a>
+        <a class="btn" href="contact.html">Schedule Test Drive</a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
         <h4>Russell's Garage</h4>
-        <p><a href="about.html" style="color:#fff; text-decoration:none;">About</a></p>
-        <p><a href="contact.html" style="color:#fff; text-decoration:none;">Contact</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
       </div>
 
-      <div class="store-badges">
+      <div class="store-badges" aria-label="App store badges">
         <img src="images/google-play.png" alt="Get it on Google Play" />
         <img src="images/app-store.png" alt="Download on the App Store" />
       </div>
 
-      <div>
-        <img src="images/logo.png" alt="Russell's Garage logo" style="height:56px;" />
+      <div class="footer-right" aria-label="Footer logo">
+        <img src="images/logo.png" alt="Russell's Garage logo" />
       </div>
     </div>
   </footer>
