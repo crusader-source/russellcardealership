@@ -204,6 +204,50 @@ main.container {
   min-width: 0;
 }
 
+.gallery {
+  margin-top: var(--space-xl);
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.quote-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  margin: 0 auto var(--space-xl);
+  max-width: 700px;
+  text-align: center;
+}
+
+.quote-box p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.quote-box button {
+  min-height: 48px;
+  padding: 0.9rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.quote-box button:hover,
+.quote-box button:focus-visible {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  outline: none;
+}
+
 .media-left img,
 .gallery-item img {
   width: 100%;
