@@ -1,7 +1,7 @@
 /*
-Name: Your Name
-Course: Your Course Name
-Assignment: JavaScript Project
+Name: Hulwe
+Course: Introduction to Web Systems
+Assignment: JS Project Assignment
 Date: April 12, 2026
 Description: This script displays a random customer quote
 for Russell's Garage when the user clicks a button.
