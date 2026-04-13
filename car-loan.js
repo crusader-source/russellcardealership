@@ -1,6 +1,5 @@
 /*
-Assignment: JavaScript Project
-Financing popup for car details page that calculates estimated monthly payment.
+Kevin Garcia-Nanez - Javascript Popup Loan Esimate 
 */
 
 document.addEventListener("DOMContentLoaded", function () {
