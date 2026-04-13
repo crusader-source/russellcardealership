@@ -15,11 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const calculateBtn = document.getElementById("calculateBtn");
   const monthlyPayment = document.getElementById("monthlyPayment");
 
-  // Safety check (prevents crashes)
+  // Safety check bro please
   if (!openPopup || !closePopup || !financePopup) {
-    console.log("Popup elements not found");
-    return;
-  }
+  console.log("Popup elements not found");
+}
 
   // Open popup
   openPopup.addEventListener("click", () => {
