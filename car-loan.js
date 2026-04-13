@@ -1,9 +1,6 @@
 /*
-Name: Kevin Nanez
-Course: Introduction to Web Systems
 Assignment: JavaScript Project
-Date: April 12, 2026
-Description: Financing popup for car details page that calculates estimated monthly payment.
+Financing popup for car details page that calculates estimated monthly payment.
 */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const calculateBtn = document.getElementById("calculateBtn");
   const monthlyPayment = document.getElementById("monthlyPayment");
 
-  // Safety check bro please
+  // Safety check | bro please work
   if (!openPopup || !closePopup || !financePopup) {
-  console.log("Popup elements not found");
+  console.log("Popup not working");
 }
 
   // Open popup
