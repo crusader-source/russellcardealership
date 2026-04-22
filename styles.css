@@ -560,3 +560,10 @@ main.container {
 .popup-overlay.show {
   display: flex;
 }
+
+/*About Us Images */
+.gallery-item img {
+  width: 100%;
+  height: 300px;       /* makes both same height */
+  object-fit: cover;   /* prevents stretching */
+}
