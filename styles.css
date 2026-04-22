@@ -566,6 +566,7 @@ main.container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-left: 1rem;   /* space from text */
 }
 
 .about-images img {
@@ -576,8 +577,8 @@ main.container {
 }
 
 .grid-two section:last-child {
-  grid-column: 1 / -1;   /* span full width */
-  justify-self: center;  /* center it */
-  max-width: 300px;
+  grid-column: 1 / -1;     /* take full row */
+  justify-self: center;    /* center horizontally */
+  width: 50%;              /* match other card width */
+  max-width: 320px;        /* prevents it getting too big */
 }
-
