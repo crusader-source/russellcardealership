@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const calculateBtn = document.getElementById("calculateBtn");
   const monthlyPayment = document.getElementById("monthlyPayment");
 
-  // Safety check | bro please work
+  // Safety check | bro please  work
   if (!openPopup || !closePopup || !financePopup) {
   console.log("Popup not working");
 }
